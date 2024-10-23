@@ -1,0 +1,28 @@
+<!doctype html>
+<title>{% block title %}{% endblock %} - Flaskr</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+<nav>
+  <h1>Driving Sim</h1>
+</nav>
+<section class="content">
+  <header>
+  </header>
+  <div>
+    <form method="post" action='/'>
+      <input type="submit" name="start_record" value="Start Record">
+      <input type="submit" name="stop_record" value="Stop Record">
+    </form>
+  </div>
+  <div>
+    <form method="post" action="/">
+      <input type="submit" name="replay_wheel" value="Replay Wheel">
+      <input type="submit" name="home_wheel" value="Home Wheel">
+      <input type="submit" name="reset" value="Reset/Initialize">
+    </form>
+  </div>
+    <div>
+    <form method="post" action="/">
+      <input type="submit" name="test" value="Test">
+    </form>
+  </div>
+</section>
